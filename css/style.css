@@ -1,0 +1,704 @@
+@charset "UTF-8";
+
+/* 共通部分
+------------------------------- */
+html {
+  font-size: 100%;
+}
+body {
+  font-family:
+    "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", sans-serif;
+  line-height: 1.7;
+  color: #432;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+
+/* レイアウト */
+.wrapper {
+  max-width: 1120px;
+  margin: auto;
+  padding: 0 1.5rem;
+}
+.align-center {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+/* 見出し */
+.font-english {
+  font-family: "Philosopher", sans-serif;
+  font-weight: normal;
+}
+.page-title,
+.heading-large,
+.heading-medium {
+  font-size: 2.5rem;
+  text-align: center;
+}
+.page-title {
+  margin-top: 2rem;
+  line-height: 1.4;
+  color: #fff;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+.heading-large {
+  margin-bottom: 1rem;
+}
+
+/* ボタン */
+.btn {
+  display: inline-block;
+  font-size: 1.5rem;
+  background-color: #0bd;
+  color: #fff;
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  transition: 0.5s;
+}
+.btn:hover {
+  background-color: #0090aa;
+}
+
+/* ヘッダー
+------------------------------- */
+.page-header {
+  padding-top: 0.5rem;
+}
+.logo {
+  width: 300px;
+}
+.main-nav {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  font-size: 1.75rem;
+  list-style: none;
+  color: #432;
+}
+
+.main-nav a:hover {
+  color: #0bd;
+}
+
+/* ヘッダーカバー画像
+------------------------------- */
+.cover {
+  background-size: cover;
+  background-position: center bottom;
+  height: 500px;
+}
+.sub-cover {
+  background-size: cover;
+  background-position: center bottom;
+  height: 528px;
+  margin-bottom: 4rem;
+}
+
+/* HOME
+------------------------------- */
+.cover-home {
+  background-image: url(../images/home-s.webp);
+}
+.about {
+  max-width: 736px;
+  padding: 0 1.5rem;
+  margin: 3rem auto 0;
+}
+.about p {
+  margin-bottom: 3rem;
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+/* 申込
+------------------------------- */
+.cover-news {
+  background-image: url(../images/entry-s.webp);
+}
+
+/* 記事部分 */
+.post {
+  margin-bottom: 3rem;
+}
+.post-title {
+  font-weight: normal;
+  margin-bottom: 1.25rem;
+}
+.post-info {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.post-cat {
+  display: flex;
+  gap: 0.5rem;
+  list-style: none;
+}
+.post-cat a {
+  color: #432;
+  background-color: #faf7f0;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  padding: 0.5rem 0.75rem;
+}
+.post-cat a:hover {
+  background-color: #c9c2bc;
+}
+.post-date {
+  font-size: 0.875rem;
+}
+.post-thumbnail {
+  border-radius: 16px;
+  margin-bottom: 1.5rem;
+}
+.post p {
+  margin-bottom: 1.5rem;
+  line-height: 2;
+}
+
+/* サイドバー */
+.side-menu {
+  list-style: none;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.side-menu li {
+  border-bottom: 1px solid #c9c2bc;
+}
+.side-menu a {
+  color: #432;
+  display: block;
+  padding: 1rem;
+}
+.side-menu a:hover {
+  color: #0bd;
+}
+
+/* コース一覧
+------------------------------- */
+.cover-menu {
+  background-image: url(../images/course-s.webp);
+}
+.grid {
+  display: grid;
+  gap: 2rem 1.5rem;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+}
+.item img {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 16px;
+}
+.item p {
+  font-size: 0.875rem;
+}
+
+/* フッター
+------------------------------- */
+.page-footer {
+  background-image: url(../images/footer-s.webp);
+  background-size: cover;
+  background-position: center;
+  padding-top: 12rem;
+}
+.info {
+  width: 100%;
+  max-width: 544px;
+  margin: auto;
+  padding: 0 1.5rem;
+  border-spacing: 0;
+}
+.info th,
+.info td {
+  border-bottom: 1px solid #c9c2bc;
+}
+.info th {
+  text-align: left;
+  font-weight: normal;
+  padding: 1rem;
+}
+.info td {
+  padding: 1rem 0;
+}
+.copyright {
+  background-color: #432;
+  text-align: center;
+  padding: 2rem 0;
+  margin-top: 6rem;
+  color: #fff;
+}
+.about-text h3 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.nasc-about {
+  text-align: center;
+}
+
+.about-emblem img {
+  margin-top: 50px;
+  max-width: 220px;
+}
+.feature {
+  margin: 4rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.feature-item {
+  width: 300px;
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.feature-item img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+.course-item {
+  width: auto;
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  min-height: 50px;
+}
+
+.course-preview h3 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.course-category {
+  margin-bottom: 5rem;
+}
+
+.course-category h3 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.recommend {
+  position: relative;
+  border: 3px solid #0bd;
+}
+
+.badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #0bd;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 8px 14px;
+}
+.price {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #0bd;
+}
+
+.course-detail {
+  margin: 6rem 0;
+}
+
+.course-detail h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.detail-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 30px;
+  margin-bottom: 2rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  font-size: 1.1rem;
+  max-width: 900px;
+  margin: 0 auto 2rem;
+}
+
+.detail-card ul {
+  margin-top: 1rem;
+  padding-left: 1.5rem;
+}
+
+.detail-card li {
+  margin-bottom: 0.7rem;
+}
+
+.recommend-detail {
+  border: 3px solid #0bd;
+}
+
+.entry-condition {
+  margin: 6rem 0;
+}
+
+.entry-condition h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.condition-card {
+  max-width: 700px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.condition-card ul {
+  padding-left: 1.5rem;
+}
+
+.condition-card li {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* FAQ誘導 */
+.menu-next {
+  text-align: center;
+  margin: 6rem 0;
+}
+
+.menu-next h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.menu-next p {
+  margin-bottom: 2rem;
+  font-size: 1.25rem;
+}
+
+/* 申込 */
+.menu-entry {
+  text-align: center;
+  margin: 6rem 0;
+}
+
+.menu-entry h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.menu-entry p {
+  margin-bottom: 2rem;
+  font-size: 1.25rem;
+}
+
+/* 申込ページ */
+.entry-page {
+  max-width: 800px;
+  margin: 0 auto 5rem;
+  padding: 0 1.5rem;
+}
+
+.entry-page h3 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.entry-page p {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.entry-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.entry-form label {
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.entry-form input,
+.entry-form select,
+.entry-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.entry-form textarea {
+  resize: vertical;
+}
+
+.entry-form .btn {
+  margin-top: 2rem;
+  align-self: center;
+}
+
+/*FAQ*/
+.cover-faq {
+  background-image: url(../images/faq-s.webp);
+}
+
+/* iframe */
+iframe {
+  width: 100%;
+}
+.access-title {
+  margin-top: 2rem;
+}
+
+.home-copy {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.home-catch {
+  font-size: 2.3rem;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+  margin-bottom: 1rem;
+}
+
+.home-sub {
+  font-size: 1.25rem;
+  color: #fff;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* 動画再生ボタン */
+
+.video-container {
+  position: relative;
+  width: 100%;
+}
+
+.video-container video {
+  width: 100%;
+  display: block;
+}
+
+.play-button {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  width: 120px;
+  height: 85px;
+
+  border: none;
+  border-radius: 16px;
+
+  background: rgba(70, 0, 249, 0.9);
+
+  color: #fff;
+
+  font-size: 42px;
+
+  cursor: pointer;
+
+  z-index: 10;
+}
+/* デスクトップ版
+------------------------------- */
+@media (min-width: 800px) {
+  /* 見出し */
+  .page-title {
+    font-size: 3.5rem;
+    color: #fff;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  }
+  .heading-large {
+    font-size: 2rem;
+  }
+  .post-title {
+    font-size: 2rem;
+  }
+
+  /* ヘッダー */
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.5rem;
+  }
+  .main-nav {
+    font-size: 2rem;
+    position: relative;
+    top: -10px;
+  }
+
+  /* ヘッダーカバー画像 */
+  .sub-cover {
+    height: 400px;
+    margin-bottom: 6rem;
+  }
+
+  /* HOME */
+  .cover-home {
+    background-image: url(../images/home.webp);
+  }
+  .about {
+    margin: 4rem auto 0;
+  }
+
+  /* 申込 */
+  .cover-news {
+    background-image: url(../images/entry.webp);
+  }
+  .news-contents {
+    display: flex;
+    justify-content: space-between;
+  }
+  .post {
+    width: 70%;
+  }
+  .sidebar {
+    width: 22%;
+  }
+  .sidebar .heading-medium {
+    line-height: 1;
+    margin-bottom: 1rem;
+  }
+
+  /* コース一覧 */
+  .cover-menu {
+    background-image: url(../images/course.webp);
+  }
+  .grid {
+    gap: 3rem 2rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .item img {
+    margin-bottom: 0.5rem;
+  }
+  .item p {
+    font-size: 1rem;
+  }
+
+  /* フッター */
+  .page-footer {
+    background-image: url(../images/footer.webp);
+    padding-top: 12rem;
+  }
+  .info th {
+    padding-left: 2.5rem;
+  }
+  .about {
+    max-width: 1200px;
+  }
+
+  .about video {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+  .nasc-about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+  }
+
+  .about-text {
+    flex: 1;
+  }
+
+  .about-emblem {
+    flex: 1;
+    text-align: center;
+  }
+
+  .about-emblem img {
+    width: 100%;
+    max-width: 350px;
+  }
+  .feature {
+    margin: 4rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .feature-item {
+    width: 300px;
+    background: #fff;
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .feature-item img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .course-preview h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .course-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  /*FAQ*/
+  .cover-faq {
+    background-image: url(../images/faq.webp);
+  }
+  .logo {
+    width: 340px;
+  }
+  .home-catch {
+    font-size: 3.5rem;
+  }
+  .home-sub {
+    font-size: 1.75rem;
+  }
+  .home-copy {
+    margin-top: 0.5rem;
+  }
+}
